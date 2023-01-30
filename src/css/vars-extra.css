@@ -49,7 +49,8 @@
   /* --width-main-gutter: 1.5rem; */
   --width-main-gutter: 2.5rem;
   --width-container: 90rem;
-  --width-container-gutter: 1.25rem;
+  --width-container-gutter: 0.25rem;
+  /* --width-container-gutter: 1.25rem; */
   --width-nav: 16rem;
   --width-toc: 12rem;
   --weight-light: 300;
@@ -70,6 +71,6 @@
 
   /* container - added from centered default ui */
   --width-container: 80rem;
-  --width-container-gutter: 1.25rem;
+  --width-container-gutter: 0.1rem;
   --width-nav: 16rem;
 }

@@ -38,7 +38,7 @@
     url(https://thoughtspot.github.io/latest/whats-new/font/Plain-RegularIta.woff) format("woff");
 }
 
-@font-face {
+/* @font-face {
   font-family: "Optimo-Plain";
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@
     local("Optimo Regular"),
     local("Optimo-Regular"),
     url(https://thoughtspot.github.io/latest/whats-new/font/Plain-Regular.woff) format("woff");
-}
+} */
 
 @font-face {
   font-family: "Optimo-Plain";
