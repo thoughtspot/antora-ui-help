@@ -5,7 +5,7 @@
   src:
     local("Optimo Thin"),
     local("Optimo-Thin"),
-    url(../font/Plain-Thin.woff) format("woff");
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-Thin.woff) format("woff");
 }
 
 @font-face {
@@ -15,17 +15,7 @@
   src:
     local("Optimo Medium"),
     local("Optimo-Medium"),
-    url(../font/Plain-Medium.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local("Optimo Italic"),
-    local("Optimo-Italic"),
-    url(../font/Plain-RegularIta.woff) format("woff");
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-Medium.woff) format("woff");
 }
 
 @font-face {
@@ -35,8 +25,28 @@
   src:
     local("Optimo-Medium-Italic"),
     local("Optimo-Medium-Italic"),
-    url(../font/Plain-MediumIta.woff) format("woff");
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-MediumIta.woff) format("woff");
 }
+
+@font-face {
+  font-family: "Optimo-Plain";
+  font-style: italic;
+  font-weight: 400;
+  src:
+    local("Optimo Italic"),
+    local("Optimo-Italic"),
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-RegularIta.woff) format("woff");
+}
+
+/* @font-face {
+  font-family: "Optimo-Plain";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Optimo Regular"),
+    local("Optimo-Regular"),
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-Regular.woff) format("woff");
+} */
 
 @font-face {
   font-family: "Optimo-Plain";
@@ -45,5 +55,5 @@
   src:
     local("Optimo-Bold"),
     local("Optimo-Bold"),
-    url(../font/Plain-Bold.woff) format("woff");
+    url(https://thoughtspot.github.io/latest/whats-new/font/Plain-Bold.woff) format("woff");
 }

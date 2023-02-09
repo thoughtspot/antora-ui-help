@@ -1,6 +1,6 @@
 @import "typeface-optimo-plain.css";
 /* @import "typeface-roboto.css"; */
-@import "typeface-roboto-mono.css";
+/* @import "typeface-roboto-mono.css"; */
 @import "vars.css";
 @import "vars-extra.css";
 @import "base.css";
@@ -30,73 +30,3 @@
 @import "site-extra.css";
 @import "snippet.css";
 /* @import "vendor/docsearch.css"; */
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Optimo Thin"),
-    local("Optimo-Thin"),
-    url('../font/Plain-Thin.woff') format('woff');
-    url('../font/Plain-Thin-webfont.woff') format('woff');
-    url('../font/Plain-Thin-webfont.eot') format('embedded-opentype');
-    url('../font/Plain-Thin-webfont.svg#Plain-Thin-webfont') format('svg');
-    url('../font/Plain-Thin-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: normal;
-  font-weight: 500;
-  src:
-    local("Optimo Medium"),
-    local("Optimo-Medium"),
-    url('../font/Plain-Medium.woff') format('woff');
-    url('../font/Plain-Medium-webfont.woff') format('woff');
-    url('../font/Plain-Medium-webfont.eot') format('embedded-opentype');
-    url('../font/Plain-Medium-webfont.svg#Plain-Medium') format('svg');
-    url('../font/Plain-Medium-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local("Optimo Italic"),
-    local("Optimo-Italic"),
-    url('../font/Plain-RegularIta.woff') format('woff');
-    url('../font/Plain-RegularIta-webfont.woff') format('woff');
-    url('../font/Plain-RegularIta-webfont.eot') format('embedded-opentype');
-    url('../font/Plain-RegularIta-webfont.svg#Plain-Medium') format('svg');
-    url('../font/Plain-RegularIta-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: italic;
-  font-weight: 500;
-  src:
-    local("Optimo-Medium-Italic"),
-    local("Optimo-Medium-Italic"),
-    url('../font/Plain-MediumIta.woff') format('woff');
-    url('../font/Plain-MediumIta-webfont.woff') format('woff');
-    url('../font/Plain-MediumIta-webfont.eot') format('embedded-opentype');
-    url('../font/Plain-MediumIta-webfont.svg#Plain-Medium') format('svg');
-    url('../font/Plain-MediumIta-webfont.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "Optimo-Plain";
-  font-style: normal;
-  font-weight: 600;
-  src:
-    local("Optimo-Bold"),
-    local("Optimo-Bold"),
-    url('../font/Plain-Bold.woff') format('woff');
-    url('../font/Plain-Bold-webfont.woff') format('woff');
-    url('../font/Plain-Bold-webfont.eot') format('embedded-opentype');
-    url('../font/Plain-Bold-webfont.svg#Plain-Medium') format('svg');
-    url('../font/Plain-Bold-webfont.ttf') format('truetype');
-}

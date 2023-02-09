@@ -11,8 +11,9 @@
   top: 2.3rem;
   /* top: 0; */
   z-index: var(--z-index-toolbar);
-  width: 100vw;
-  margin-left: -18px;
+  width: 110vw;
+  /* margin-left: -18px; */
+  margin-left: -5px;
 }
 
 /* .toolbar-orig {
@@ -77,7 +78,8 @@ a.badge.badge-dep-toc {
   background: url(../img/home-o.svg) no-repeat center;
   height: calc(var(--toolbar-height) / 2);
   width: calc(var(--toolbar-height) / 2);
-  margin: calc(var(--toolbar-height) / 4);
+  /* margin: calc(var(--toolbar-height) / 4); */
+  margin: 1.1rem;
 }
 
 .home-link:hover,
