@@ -12,7 +12,7 @@
   {{#with @root.page.componentVersion}}
   <a href="{{{relativize ./url}}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
   {{/with}}
-
+ <a href="https://docs.thoughtspot.com{{{page.url}}}" target="_blank">Open page on doc site</a>
 {{> breadcrumbs}}
 {{> page-versions}}
   {{#if (and page.fileUri (not env.CI))}}

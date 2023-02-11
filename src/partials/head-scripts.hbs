@@ -47,7 +47,7 @@
 			filters: filters,
 			firstResults: 'docs',
 			placeholderText: 'Search documentation, community, and training',
-			startFocused: window.location.href.indexOf('index_help') > -1 ? true : false,
+			startFocused: window.location.pathname.split('/').filter(Boolean).length == 3 ? true : false,
 			filters: filters,
 			hideViewMore: true,
 			docsIndexName: 'crawler_thoughtspot_help'
