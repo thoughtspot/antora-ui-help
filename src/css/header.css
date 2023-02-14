@@ -18,7 +18,7 @@ body.snippet {
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
   position: fixed;
-  top: 0;
+  top: 54px;
   width: 100%;
   z-index: var(--z-index-navbar);
 }
@@ -35,14 +35,6 @@ body.snippet {
   z-index: var(--z-index-navbar);
 }
 
-/* added from centered default ui */
-.navbar .container {
-  display: flex;
-  align-items: center;
-  height: var(--navbar-height);
-}
-/* end - added from centered default ui */
-
 .navbar a {
   text-decoration: none;
   margin-top: 10px;
@@ -51,10 +43,7 @@ body.snippet {
 }
 
 .navbar-brand {
-  display: flex;
-  padding-left: 1rem;
-  position: relative; /* changed to align search box to the right */
-  z-index: var(--z-index-navbar);
+  display: none;
 }
 
 .navbar-brand .navbar-item:first-child,
@@ -122,7 +111,6 @@ body.snippet {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
 }
 
 .navbar-item.has-dropdown {
@@ -195,12 +183,6 @@ body.snippet {
 }
 
 @media screen and (max-width: 1023.5px) {
-  .navbar-end .navbar-item {
-    margin-left: 20px; /* added from centered default ui */
-  }
-}
-
-@media screen and (max-width: 1023.5px) {
   .navbar-item.has-dropdown .navbar-link {
     padding-right: 2.5em;
     margin-top: -10px;
@@ -249,11 +231,6 @@ body.snippet {
   .navbar-menu .navbar-link:hover {
     background: var(--navbar-menu_hover-background);
     color: #444;
-  }
-  /* new nav bar stuff - start */
-  .navbar-end .navbar-item.search {
-    height: 3rem;
-    display: flex;
   }
 
   #search .query {
