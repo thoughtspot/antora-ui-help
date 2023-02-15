@@ -47,8 +47,8 @@
 		console.log('useCookie', getCookie('help_history'));
 		window.location = getCookie('help_history');
 	} else if (!homePage) {
-		console.log('setCookie', window.location.href);
 		setCookie('help_history', window.location.href, 1);
+		console.log('setCookie', window.location.href, getCookie('help_history'));
 	} else if (homePage) {
 		console.log('eraseCookie');
 		eraseCookie('help_history');
