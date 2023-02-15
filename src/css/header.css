@@ -19,7 +19,7 @@ body.snippet {
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
   position: fixed;
-  top: -10px;
+  top: 0;
   width: 100%;
   z-index: var(--z-index-navbar);
 }
