@@ -64,8 +64,12 @@
 		}
 	});
 
-	document.querySelector('.home-link').addEventListener('click', (e) => {
-		eraseCookie('help_history');
+	window.addEventListener('load', () => {
+		if (document.querySelector('.home-link')) {
+			document.querySelector('.home-link').addEventListener('click', (e) => {
+				eraseCookie('help_history');
+			})
+		}
 	})
 
 	let initialized = false;
