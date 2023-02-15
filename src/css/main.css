@@ -4,7 +4,8 @@
   }
 
   main > .content {
-    overflow-x: auto;
+    overflow: auto;
+    max-height: calc(100vh - 85px)
   }
 }
 
