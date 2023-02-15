@@ -56,8 +56,12 @@
 		eraseCookie('help_history');
 	}
 
+	// document.querySelector('#myFrame').contentWindow.postMessage('close', '*')
 	window.addEventListener('message', (event) => {
-		console.log('message', event);
+		console.log('message', event)
+		if (event.data == 'close') {
+			eraseCookie('help_history')
+		}
 	});
 
 	document.querySelector('.home-link').addEventListener('click', (e) => {
