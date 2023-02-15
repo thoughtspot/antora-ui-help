@@ -952,18 +952,22 @@ li::marker {
 }
 
 .doc .admonitionblock.caution > table {
-  background-color: transparent;
-  border: 2px solid rgba(247, 140, 32, 0.2); /* for new all-in-one note */
-  border-left: 6px solid #f78c20; /* for new all-in-one note */
-  border-radius: 5px; /* for new all-in-one note */
-  border-bottom: 2px solid rgba(247, 140, 32, 0.2);
-  border-top: 2px solid rgba(247, 140, 32, 0.2);
-  border-right: 2px solid rgba(247, 140, 32, 0.2);
+  /* background-color: transparent; */
+  /* border: 2px solid rgba(247, 140, 32, 0.2); /* for new all-in-one note */
+  /* border-left: 6px solid #f78c20; /* for new all-in-one note */
+  /* border-radius: 5px; /* for new all-in-one note */
+  /* border-bottom: 2px solid rgba(247, 140, 32, 0.2); */
+  /* border-top: 2px solid rgba(247, 140, 32, 0.2); */
+  /* border-right: 2px solid rgba(247, 140, 32, 0.2); */
   /* box-shadow: 0.1px 1px 5px 1px #ccc; */
+  background-color: #fef9e5;
+  border: 0 !important;
+  border-radius: 8px;
+  border-left: 0;
 }
 
 .doc .admonitionblock.caution td.icon i::before {
-  background-image: url(../img/caution.svg);
+  background-image: url(../img/Yellow_Alert.svg);
   vertical-align: middle;
 }
 
@@ -1050,7 +1054,7 @@ li::marker {
 .doc .admonitionblock.note td.icon i::before {
   background-image: url(../img/Alert_Icon.svg);
   vertical-align: middle;
-  padding-left: 25px; /* for new all-in-one note */
+  /* padding-left: 25px; /* for new all-in-one note */
 }
 
 .doc-snippet .admonitionblock.note td.icon i::before {
@@ -1097,14 +1101,18 @@ li::marker {
 }
 
 .doc .admonitionblock.tip > table {
-  background-color: transparent;
-  border: 2px solid rgba(6, 191, 127, 0.2); /* for new all-in-one note */
-  border-left: 6px solid #06bf7f; /* for new all-in-one note */
-  border-radius: 5px; /* for new all-in-one note */
-  border-bottom: 2px solid rgba(6, 191, 127, 0.2);
-  border-top: 2px solid rgba(6, 191, 127, 0.2);
-  border-right: 2px solid rgba(6, 191, 127, 0.2);
+  /* background-color: transparent; */
+  /* border: 2px solid rgba(6, 191, 127, 0.2); /* for new all-in-one note */
+  /* border-left: 6px solid #06bf7f; /* for new all-in-one note */
+  /* border-radius: 5px; /* for new all-in-one note */
+  /* border-bottom: 2px solid rgba(6, 191, 127, 0.2); */
+  /* border-top: 2px solid rgba(6, 191, 127, 0.2); */
+  /* border-right: 2px solid rgba(6, 191, 127, 0.2); */
   /* box-shadow: 0.1px 1px 5px 1px #ccc; */
+  background-color: #e2f9ef;
+  border: 0 !important;
+  border-radius: 8px;
+  border-left: 0;
 }
 
 .doc-snippet .admonitionblock.tip > table {
@@ -1119,7 +1127,7 @@ li::marker {
 }
 
 .doc .admonitionblock.tip td.icon i::before {
-  background-image: url(../img/tip.svg);
+  background-image: url(../img/Green_Check.svg);
   vertical-align: middle;
 }
 
@@ -1137,18 +1145,22 @@ li::marker {
 }
 
 .doc .admonitionblock.warning > table {
-  background-color: transparent;
-  border: 2px solid rgba(255, 89, 90, 0.2); /* for new all-in-one note */
-  border-left: 6px solid #ff595a; /* for new all-in-one note */
-  border-radius: 5px; /* for new all-in-one note */
-  border-bottom: 2px solid rgba(255, 89, 90, 0.2);
-  border-top: 2px solid rgba(255, 89, 90, 0.2);
-  border-right: 2px solid rgba(255, 89, 90, 0.2);
+  /* background-color: transparent; */
+  /* border: 2px solid rgba(255, 89, 90, 0.2); /* for new all-in-one note */
+  /* border-left: 6px solid #ff595a; /* for new all-in-one note */
+  /* border-radius: 5px; /* for new all-in-one note */
+  /* border-bottom: 2px solid rgba(255, 89, 90, 0.2); */
+  /* border-top: 2px solid rgba(255, 89, 90, 0.2); */
+  /* border-right: 2px solid rgba(255, 89, 90, 0.2); */
   /* box-shadow: 0.1px 1px 5px 1px #ccc; */
+  background-color: #feebec;
+  border: 0 !important;
+  border-radius: 8px;
+  border-left: 0;
 }
 
 .doc .admonitionblock.warning td.icon i::before {
-  background-image: url(../img/warning.svg);
+  background-image: url(../img/Red_Alert.svg);
   vertical-align: middle;
 }
 

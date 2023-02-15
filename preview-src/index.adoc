@@ -26,6 +26,14 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
+NOTE: This is a note
+
+WARNING: This is a Warning
+
+TIP: This is a TIP
+
+CAUTION: This is a Caution
+
 [cols="20%,20%,20%,40%",frame=ends,grid=rows]
 |===
 |Original contract term |Rollover within contract term |Renewal contract term |Rollover at time of renewal
