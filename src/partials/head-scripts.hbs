@@ -43,6 +43,8 @@
 	const splitPath = currentPath.split('/').filter(Boolean);
 	const homePage = splitPath.length == 3 ? true : false;
 
+	console.log('cookie', getCookie('help_history'), homePage);
+
 	if (getCookie('help_history') && homePage) {
 		console.log('useCookie', getCookie('help_history'));
 		window.location = getCookie('help_history');
@@ -92,7 +94,7 @@
 			addClass: 'header_algolia_search',
 			firstResults: 'docs',
 			placeholderText: 'Search documentation, community, and training',
-			startFocused: window.location.href.indexOf('index_help') > -1 ? true : false,
+			startFocused: homePage ? true : false,
 			filters: filters,
 			hideViewMore: true,
 			docsIndexName: 'crawler_thoughtspot_help'
