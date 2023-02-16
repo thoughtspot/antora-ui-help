@@ -3,11 +3,12 @@ const contentWindow = iframe.contentWindow;
 
 const pendoButton = document.querySelector('#pendo-button-35ef2727');
 pendoButton.style.pointerEvents = 'none';
-const pendoButtonParent = pendoButton.parentNode
+const pendoButtonParent = pendoButton.parentNode;
+pendoButtonParent.style.cursor = 'pointer';
 pendoButtonParent.onclick = function() {
 	if (iframe && iframe.contentWindow) {
-		iframe.contentWindow.postMessage('close', '*')
-		pendoButton.click()
+		iframe.contentWindow.postMessage('close', '*');
+		setTimeout(() => {pendoButton.click()});
 	}
 }
 

@@ -37,7 +37,6 @@
 	}
 	function eraseCookie(name, path='/') {
 		if (getCookie(name)) {
-			console.log('erase?', document.cookie)
 			document.cookie = name + "=" +
 				((path) ? "; path=" + path:"") +
 				"; expires=Thu, 01 Jan 1970 00:00:01 GMT; SameSite=None; secure=true;";
@@ -48,21 +47,21 @@
 	const splitPath = currentPath.split('/').filter(Boolean);
 	const homePage = splitPath.length == 3 ? true : false;
 
-	console.log('cookie', getCookie('help_history'), homePage);
+	// console.log('cookie', getCookie('help_history'), homePage);
 
 	if (getCookie('help_history') && homePage) {
-		console.log('useCookie', getCookie('help_history'));
+		// console.log('useCookie', getCookie('help_history'));
 		window.location = getCookie('help_history');
 	} else if (!homePage) {
 		setCookie('help_history', window.location.href, 1);
-		console.log('setCookie', window.location.href, getCookie('help_history'));
+		// console.log('setCookie', window.location.href, getCookie('help_history'));
 	} else if (homePage) {
-		console.log('eraseCookie');
+		// console.log('eraseCookie');
 		eraseCookie('help_history');
 	}
 
 	window.addEventListener('message', (event) => {
-		console.log('message', event)
+		// console.log('message', event)
 		if (event.data == 'close') {
 			eraseCookie('help_history')
 		}
