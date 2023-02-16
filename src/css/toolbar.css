@@ -93,7 +93,7 @@ a.badge.badge-dep-toc {
   height: calc(var(--toolbar-height) / 2);
   width: calc(var(--toolbar-height) / 2);
   /* margin: calc(var(--toolbar-height) / 4); */
-  margin-left: 375px;
+  margin-left: 440px;
 }
 
 .edit-this-page {

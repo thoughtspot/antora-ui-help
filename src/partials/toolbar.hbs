@@ -10,7 +10,6 @@
   <h3 class="title"><a href="{{{relativize ./url}}}">{{./title}}</a></h3>
   {{/with}} -->
   {{#with @root.page.componentVersion}}
-  <a href="{{{relativize ./url}}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
   {{/with}}
  <a href="https://docs.thoughtspot.com{{{page.url}}}" class="doc-link" target="_blank" title="Open on docs site"></a>
 {{> breadcrumbs}}
