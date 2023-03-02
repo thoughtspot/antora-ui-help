@@ -1,4 +1,4 @@
-<!-- <main class="article algolia_docs algolia_hits_expanded"  data-ceiling="topbar"> -->
+{{> toolbar}}
 <main class="article"  data-ceiling="topbar">
   <!-- {{#unless (or page.attributes.hide-view-latest (eq page.componentVersion page.component.latest))}}
   <div class="article-banner">
@@ -12,7 +12,6 @@
   {{/unless}}
   <div class="article-header"> -->
 <!-- {{> nav-control}} -->
-{{> toolbar}}
   <div class="content">
 {{#if (eq page.layout '404')}}
 {{> article-404}}

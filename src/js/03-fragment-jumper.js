@@ -4,7 +4,7 @@
   const DEBUG = false
 
   var article = document.querySelector('article.doc')
-  var toolbar = document.querySelector('.toolbar')
+  var toolbar = document.querySelector('.helpbar')
 
   function decodeFragment (hash) {
     return hash && (~hash.indexOf('%') ? decodeURIComponent(hash) : hash).slice(1)
