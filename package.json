@@ -19,13 +19,11 @@
     "build": "gulp"
   },
   "devDependencies": {
+    "@djencks/algolia-ui": "https://gitlab.com/djencks/algolia-ui.git",
     "@djencks/antora-ui-builder": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-antora-ui-builder-v0.0.6.tgz",
     "@djencks/tabset-block-ui": "https://experimental-repo.s3-us-west-1.amazonaws.com/djencks-tabset-block-ui-v0.0.3.tgz",
-    "@djencks/algolia-ui": "https://gitlab.com/djencks/algolia-ui.git",
     "antora-ui-default": "git+https://gitlab.com/antora/antora-ui-default.git",
     "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
     "gulp": "~4.0",
     "gulp-concat": "~2.6",
     "gulp-connect": "~5.7",
@@ -33,8 +31,10 @@
     "gulp-imagemin": "~6.2",
     "gulp-postcss": "~9.0",
     "gulp-stylelint": "~13.0",
-    "gulp-vinyl-zip": "~2.2",
     "gulp-uglify": "~3.0",
+    "gulp-vinyl-zip": "~2.2",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "tippy.js": "^6.2.7",
     "websocket-extensions": "^0.1.4"
   },

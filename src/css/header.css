@@ -3,8 +3,9 @@ html.is-clipped--navbar {
 }
 
 body {
-  padding-top: 85px;
-  overflow: hidden;
+  /* padding-top: 85px; */
+  padding-top: var(--navbar-height);
+  /* overflow: hidden; */
 }
 
 body.snippet {
@@ -12,21 +13,17 @@ body.snippet {
   margin-top: -5px;
 }
 
-.navbar {
-  /* background: var(--thoughtspot-blue); */
-  /* background: linear-gradient(89deg, rgba(68, 68, 68, 1) 0%, rgba(78, 85, 253, 1) 15%, rgba(78, 85, 253, 1) 50%, rgba(71, 74, 130, 1) 85%, rgba(68, 68, 68, 1) 100%); */
-  color: var(--navbar-font-color);
-  font-size: calc(16 / var(--rem-base) * 1rem);
+.navbar .container {
+  display: flex;
+  align-items: center;
   height: var(--navbar-height);
-  position: fixed;
-  top: -10px;
-  width: 100%;
-  z-index: var(--z-index-navbar);
+  /* height: 3.5rem; */
 }
 
-.navbar-orig {
+.navbar {
   /* background: var(--thoughtspot-blue); */
-  background: linear-gradient(89deg, rgba(68, 68, 68, 1) 0%, rgba(78, 85, 253, 1) 15%, rgba(78, 85, 253, 1) 50%, rgba(71, 74, 130, 1) 85%, rgba(68, 68, 68, 1) 100%);
+  background: #ffff;
+  /* background: linear-gradient(89deg, rgba(68, 68, 68, 1) 0%, rgba(78, 85, 253, 1) 15%, rgba(78, 85, 253, 1) 50%, rgba(71, 74, 130, 1) 85%, rgba(68, 68, 68, 1) 100%); */
   color: var(--navbar-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);

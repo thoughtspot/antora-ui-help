@@ -1,5 +1,6 @@
 .nav-toggle {
   background: url(../img/menu.svg) no-repeat 100% 50.5%;
+  visibility: hidden;
   background-size: 49%;
 }
 
