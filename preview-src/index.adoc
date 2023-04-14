@@ -61,7 +61,7 @@ xref:snippet.adoc[example snippet]
 xref:home.adoc[home!]
 
 +++
-<button data-tippy-content="Me first!">Default</button>
+<button data-tippy-content="Early Access features are complete, and available for customers to try before they reach GA, when they are enabled by default. They are supported by ThoughtSpot">Default</button>
 <button data-tippy-content="hello, my name is inigo montoya. You killed my father. Prepare to die.">I have my own content</button>
 <button data-tippy-arrow="true">I have my own option</button>
 <button
