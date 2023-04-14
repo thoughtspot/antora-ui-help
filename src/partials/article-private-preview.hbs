@@ -1,0 +1,9 @@
+<article class="doc">
+{{#with page.title}}
+<h1 class="page">{{{this}}}
+<!-- <br><span class="badge badge-private-preview">Private Preview</span></h1> -->
+<br><button id="tooltipButton" class="badge badge-private-preview" data-tippy-content="Private Preview features are complete and available for select customers to try before they reach GA, when they are enabled by default. They are subject to change before GA, and you must contact ThoughtSpot support to enable them. ">Private Preview</button></h1>
+{{/with}}
+{{{page.contents}}}
+{{> pagination}}
+</article>
