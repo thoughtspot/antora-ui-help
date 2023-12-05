@@ -25,11 +25,12 @@
   display: flex;
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
-  justify-content: flex-start;
   position: sticky;
   top: var(--navbar-height);
   /* top: 3.5rem; */
   z-index: var(--z-index-toolbar);
+  width: 100%;
+  justify-content: space-between;
 }
 
 .helpbar {
@@ -99,7 +100,7 @@ a.badge.badge-dep-toc {
   height: calc(var(--toolbar-height) / 2);
   width: calc(var(--toolbar-height) / 2);
   /* margin: calc(var(--toolbar-height) / 4); */
-  margin-left: 400px;
+  margin: 10px;
 }
 
 .edit-this-page {
