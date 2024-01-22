@@ -27,6 +27,8 @@ Vestibulum consectetur nec urna a luctus.
 Quisque pharetra tristique arcu fringilla dapibus.
 Curabitur ut massa aliquam, cursus enim et, accumsan lectus.
 
+<<cu-solet,click me to go to cu solet>>
+
 NOTE: This is a note
 
 WARNING: This is a Warning
@@ -34,6 +36,8 @@ WARNING: This is a Warning
 TIP: This is a TIP
 
 CAUTION: This is a Caution
+
+IMPORTANT: This is an Important
 
 [cols="20%,20%,20%,40%",frame=ends,grid=rows]
 |===
@@ -116,6 +120,7 @@ xref:home.adoc[home!]
 
 ++++
 
+[#cu-solet]
 == Cu solet
 
 Nominavi luptatum eos, an vim hinc philosophia intellegebat.

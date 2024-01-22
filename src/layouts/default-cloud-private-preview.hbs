@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<!-- {{> head defaultPageTitle='Untitled'}} -->
 {{> head-snippet-algolia-pendo defaultPageTitle='Untitled'}}
   </head>
   <body class="article{{#with (or page.attributes.role page.role)}} {{{this}}}{{/with}}">
 {{> header-algolia-pendo}}
-{{> body-snippet-help}}
-{{> footer}}
+{{> body-private-preview}}
+<!-- {{> footer}} -->
+<!--
+<script src="https://cdn.sitesearch360.com/v13/sitesearch360-v13.min.js" async></script> -->
   </body>
 </html>

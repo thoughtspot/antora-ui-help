@@ -1,0 +1,9 @@
+<article class="doc">
+{{#with page.title}}
+<h1 class="page">{{{this}}}
+<!-- <br><span class="badge badge-early-access">Early Access</span></h1> -->
+<br><button id="tooltipButton" class="badge badge-beta" data-tippy-content="Beta features are incomplete, may have bugs, and are subject to change before they reach GA. They are enabled for select customers to provide early feedback to the product team prior to GA, when they are enabled by default. You must contact ThoughtSpot support to enable them.">Beta</button></h1>
+{{/with}}
+{{{page.contents}}}
+{{> pagination}}
+</article>

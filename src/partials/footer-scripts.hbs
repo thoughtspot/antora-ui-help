@@ -1,5 +1,15 @@
 <!-- <script src="{{uiRootPath}}/js/site.js"></script> -->
+<!-- <script src="https://help-cloud-thoughtspot.netlify.app/_/js/site.js"></script> -->
+<!-- <script src="../../_/js/site.js"></script> -->
+<!-- <script src="{{uiRootPath}}/js/vendor/highlight.js"></script> -->
+<script src="{{uiRootPath}}/js/site.js"></script>
+<!-- <script src="{{uiRootPath}}/js/03-fragment-jumper.js"></script> -->
+<script src="https://docs.thoughtspot.com/home/_attachments/03-fragment-jumper.js"></script>
 <script src="{{uiRootPath}}/js/vendor/highlight.js"></script>
+<script src="{{{uiRootPath}}}/js/vendor/jquery.js"></script>
+<script src="{{{uiRootPath}}}/js/vendor/bootstrap.js"></script>
+<script src="{{{uiRootPath}}}/js/vendor/tab.js"></script>
+<!-- <script src="{{uiRootPath}}/js/03-fragment-jumper.js"></script> -->
 <!-- <script src="{{{uiRootPath}}}/js/vendor/jquery.js"></script> -->
 <!-- <script src="{{{uiRootPath}}}/js/vendor/bootstrap.js"></script> -->
 <!-- <script src="{{{uiRootPath}}}/js/vendor/tab.js"></script> -->
@@ -120,7 +130,7 @@
 </script> -->
   <!--  <script>var vanillaModal = new VanillaModal.default()</script> -->
   <!--  <script>const modal = new VanillaModal(options);</script> -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- scripts from header scripts - end -->
@@ -128,102 +138,17 @@
 <!--  <script src="{{{uiRootPath}}}/js/vendor/tippy.js"></script>-->
 <!-- <script async src="{{{uiRootPath}}}/js/vendor/popper.js"></script>-->
 
-<!--<script src="https://unpkg.com/@popperjs/core@2"></script>-->
-<!--<script src="https://unpkg.com/tippy.js@6"></script>-->
-<!-- <script>
-tippy('button', {content: 'tooltip'});
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+tippy('#tooltipButton', {
+  content: 'tooltip',
+  allowHTML: true,
+  interactive: true,
+  placement: 'bottom',
+  duration: '700',
+});
 </script>
-<script>
-// IIFE to ensure safe use of $
-(function( $ ) {
-
-  // Create plugin
-  $.fn.tooltips = function(el) {
-
-    var $tooltip,
-      $body = $('body'),
-      $el;
-
-    // Ensure chaining works
-    return this.each(function(i, el) {
-
-      $el = $(el).attr("data-tooltip", i);
-
-      // Make DIV and append to page
-      var $tooltip = $('<div class="tooltip" data-tooltip="' + i + '">' + $el.attr('title') + '<div class="arrow"></div></div>').appendTo("body");
-
-      // Position right away, so first appearance is smooth
-      var linkPosition = $el.position();
-
-      $tooltip.css({
-        top: linkPosition.top - $tooltip.outerHeight() - 13,
-        left: linkPosition.left - ($tooltip.width()/2)
-      });
-
-      $el
-      // Get rid of yellow box popup
-      .removeAttr("title")
-
-      // Mouseenter
-      .hover(function() {
-
-        $el = $(this);
-
-        $tooltip = $('div[data-tooltip=' + $el.data('tooltip') + ']');
-
-        // Reposition tooltip, in case of page movement e.g. screen resize
-        var linkPosition = $el.position();
-
-        $tooltip.css({
-          top: linkPosition.top - $tooltip.outerHeight() - 13,
-          left: linkPosition.left - ($tooltip.width()/2)
-        });
-
-        // Adding class handles animation through CSS
-        $tooltip.addClass("active");
-
-        // Mouseleave
-      }, function() {
-
-        $el = $(this);
-
-        // Temporary class for same-direction fadeout
-        $tooltip = $('div[data-tooltip=' + $el.data('tooltip') + ']').addClass("out");
-
-        // Remove all classes
-        setTimeout(function() {
-          $tooltip.removeClass("active").removeClass("out");
-          }, 300);
-
-        });
-
-      });
-
-    }
-
-})(jQuery);
-
-$("a[title]").tooltips();
-</script> -->
-<!-- fetched from https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js -->
-<!-- old search snippet - begin <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-function focusSearchInput () { document.querySelector('#input').focus() }
-var search = docsearch({
-  appId: '7DXYLT633X',
-  apiKey: 'f2070e11a04d7c9e7487102e4a68ea1a',
-  indexName: 'search-manager',
-  inputSelector: '#search-input',
-  autocompleteOptions: { hint: false, keyboardShortcuts: ['s'] },
-  algoliaOptions: {
-    facetFilters: [['version:latest', 'version:6.2', 'version:6.1', 'version:6.0']],
-  }
-}).autocomplete
-search.on('autocomplete:closed', function () { search.autocomplete.setVal() })
-focusSearchInput()
-window.addEventListener('load', focusSearchInput)
-</script>-->
-
 <!-- old search snippet - end -->
 <!-- docsearch snippet - begin -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script> -->

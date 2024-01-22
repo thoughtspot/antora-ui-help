@@ -1,4 +1,4 @@
-.toolbar {
+/* .toolbar-help {
   color: var(--toolbar-font-color);
   align-items: center;
   background-color: var(--toolbar-background);
@@ -8,15 +8,16 @@
   height: var(--toolbar-height);
   justify-content: flex-start;
   position: fixed;
-  top: 50px;
-  /* top: 0; */
-  z-index: var(--z-index-toolbar);
-  width: 110vw;
-  /* margin-left: -18px; */
-  margin-left: -5px;
-}
+/* top: 50px; */
+/* top: 0; */
+/* top: 3.5rem; */
+/* z-index: var(--z-index-toolbar); */
+/* width: 110vw; */
+/* margin-left: -18px; */
+/* margin-left: -5px; */
+/* } */
 
-/* .toolbar-orig {
+.toolbar {
   color: var(--toolbar-font-color);
   align-items: center;
   background-color: var(--toolbar-background);
@@ -24,19 +25,24 @@
   display: flex;
   font-size: calc(15 / var(--rem-base) * 1rem);
   height: var(--toolbar-height);
-  justify-content: flex-start;
   position: sticky;
-  /* top: var(--navbar-height); */
-/* top: 3.5rem; */
-/* z-index: var(--z-index-toolbar); */
-/* } */
+  top: var(--navbar-height);
+  /* top: 3.5rem; */
+  z-index: var(--z-index-toolbar);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.helpbar {
+  height: var(--helpbar-height);
+}
 
 .toolbar a {
   color: inherit;
 }
 
 .nav-toggle {
-  background: url(../img/menu.svg) no-repeat 50% 47.5%;
+  /* background: url(../img/menu.svg) no-repeat 50% 47.5%; */
   background-size: 49%;
   border: none;
   outline: none;
@@ -45,6 +51,7 @@
   height: var(--toolbar-height);
   width: var(--toolbar-height);
   margin-right: -0.25rem;
+  visibility: hidden !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -93,7 +100,7 @@ a.badge.badge-dep-toc {
   height: calc(var(--toolbar-height) / 2);
   width: calc(var(--toolbar-height) / 2);
   /* margin: calc(var(--toolbar-height) / 4); */
-  margin-left: 440px;
+  margin: 10px;
 }
 
 .edit-this-page {

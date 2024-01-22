@@ -1,5 +1,5 @@
 <div class="toolbar" role="navigation">
-<!-- {{> nav-toggle}} -->
+{{> nav-toggle}}
 <!-- {{#with site.homeUrl}}
 <a href="{{relativize this}}" class="home-link{{#if @root.page.home}} is-current{{/if}}"></a>
   {{/with}} -->
@@ -11,7 +11,7 @@
   {{/with}} -->
   {{#with @root.page.componentVersion}}
   {{/with}}
- <a href="https://docs.thoughtspot.com/cloud" class="doc-link" target="_blank" title="Go to docs site"></a>
+ <!-- <a href="https://docs.thoughtspot.com/software" class="doc-link" target="_blank" title="Go to docs site"></a> -->
 {{> breadcrumbs}}
 {{> page-versions}}
   {{#if (and page.fileUri (not env.CI))}}
